@@ -1,0 +1,568 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales del index*/
+
+body{
+    background-image: url(../img/lafoto.jpg);
+    background-repeat: repeat;
+}
+
+
+/*estilos del header*/
+
+header h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    background-image: linear-gradient(to bottom,  rgb(37, 36, 36), white);
+}
+
+header .contenedor{
+    color: black;
+}
+
+header h2{    
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-image: linear-gradient(to top, rgb(83, 83, 83), white);
+    color: black
+
+    
+}
+
+/*estilos del main*/
+
+main div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main div a img{
+    width: 95%;
+    margin: 1rem;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 1rem white;
+    animation-name: movimientos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movimientos {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+main div a .imagen-1{
+    width: 40vh;
+}
+
+main div a .imagen-2{
+    width: 40vh;
+}
+
+main div a .imagen-3{
+    width: 40vh;
+    
+}
+
+
+/*estilos del footer*/
+
+footer h3{
+    margin-top: 2rem;
+    text-align: center;
+    color: rgb(51, 45, 45);
+    background-color: black;
+    color: white;
+    padding: 0.20rem;
+    height: 6.3vh;
+}
+
+/*estilos para primeragen-html*/
+
+.contenedor-primero{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "section sec-dos"
+    "footer footer";
+    gap: 1rem;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.2fr ;
+
+}
+
+/*estilos de los hijos primeragen-html*/
+
+.header-uno{
+    display: flex;
+    height: 3rem;
+    grid-area: header;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.header-uno nav a{
+    background-color: rgb(61, 61, 61);
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+}
+
+.header-uno nav{
+    background-color: rgb(61, 61, 61);
+    border-radius: 1rem;
+}
+.header-uno ul{
+    display: flex;
+    gap: 1rem;
+    background-color: rgb(61, 61, 61);
+}
+
+.header-uno ul li {
+    background-color: rgb(61, 61, 61);
+    padding: 2rem;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 1rem;
+
+
+}
+
+.header-uno ul li a{
+    text-decoration: none;
+    background-color: rgb(61, 61, 61);
+    color: rgb(212, 212, 212);
+    
+
+}
+
+/*estilos del main*/ 
+
+
+/*principales*/
+
+.main-uno {
+    background-image: linear-gradient(to bottom,  rgb(37, 36, 36), white);
+    color: rgb(197, 197, 197);
+    grid-area: main;
+}
+
+.main-uno h1 {
+    text-align: center;
+
+}
+
+.div-uno {
+    text-align: center;
+}
+
+.squirtle {
+    width: 25vh;
+    transition: 1s;
+}
+
+.squirtle:hover {
+    transform: scale(1.1);
+}
+
+.squirtle:hover {
+    transform: scale(1.1);
+}
+
+.bulbasaur {
+    width: 25vh;
+    transition: 1s;
+}
+
+.bulbasaur:hover {
+    transform: scale(1.1);
+}
+
+
+.charmander {
+    width: 25vh;
+    transition: 1s;
+}
+
+.charmander:hover {
+    transform: scale(1.1);
+}
+
+.pikachu {
+    width: 25vh;
+    transition: 1s;
+}
+
+.pikachu:hover {
+    transform: scale(1.1);
+}
+
+/*legendarios*/
+
+.legendariospri-gen {
+    background-image: linear-gradient(to top,  rgb(37, 36, 36), white);
+    grid-area: section;
+    text-align: center;
+    color: black;
+    
+
+}
+
+.articuno {
+    width: 20vh;
+    transition: 1s;
+}
+
+.articuno:hover {
+    transform: scale(1.1);
+}
+
+.moltres {
+    width: 20vh;
+    transition: 1s;
+}
+
+.moltres:hover {
+    transform: scale(1.1);
+}
+
+.zapdos {
+    width: 20vh;
+    transition: 1s;
+}
+
+.zapdos:hover {
+    transform: scale(1.1);
+}
+
+.mew {
+    width: 20vh;
+    transition: 1s;
+}
+
+.mew:hover {
+    transform: scale(1.1);
+}
+
+.meowto {
+    width: 20vh;
+    transition: 1s;
+}
+
+.meowto:hover {
+    transform: scale(1.1);
+}
+
+
+/*otros pokes*/
+
+.otrospokes-uno {
+    grid-area: sec-dos;
+    background-image: linear-gradient(to top,  rgb(37, 36, 36), white);
+    text-align: center;
+}
+
+.nidorino {
+    width: 10vh;
+    transition: 1s;
+}
+
+.nidorino:hover {
+    transform: scale(1.5);
+}
+
+.nidoran {
+    width: 10vh;
+    transition: 1s;
+}
+
+.nidoran:hover {
+    transform: scale(1.5);
+}
+
+.widle {
+    width: 10vh;
+    transition: 1s;
+}
+
+.widle:hover {
+    transform: scale(1.5);
+}
+
+.pidgey {
+    width: 10vh;
+    transition: 1s;
+}
+
+.pidgey:hover {
+    transform: scale(1.5);
+}
+
+.spearow {
+    width: 10vh;
+    transition: 1s;
+}
+
+.spearow:hover {
+    transform: scale(1.5);
+}
+
+.pichu {
+    width: 10vh;
+    transition: 1s;
+}
+
+.pichu:hover {
+    transform: scale(1.5);
+}
+
+.caterpie {
+    width: 10vh;
+    transition: 1s;
+}
+
+.caterpie:hover {
+    transform: scale(1.5);
+}
+
+.rattata {
+    width: 10vh;
+    transition: 1s;
+}
+
+.rattata:hover {
+    transform: scale(1.5);
+}
+
+.jigly {
+    width: 10vh;
+    transition: 1s;
+}
+
+.jigly:hover {
+    transform: scale(1.5);
+}
+
+.snorlax {
+    width: 10vh;
+    transition: 1s;
+}
+
+.snorlax:hover {
+    transform: scale(1.5);
+}
+
+.clefa {
+    width: 10vh;
+    transition: 1s;
+}
+
+.clefa:hover {
+    transform: scale(1.5);
+}
+
+.ekans {
+    width: 10vh;
+    transition: 1s;
+}
+
+.ekans:hover {
+    transform: scale(1.5);
+}
+
+.abra {
+    width: 10vh;
+    transition: 1s;
+}
+
+.abra:hover {
+    transform: scale(1.2);
+}
+
+.oddish {
+    width: 10vh;
+    transition: 1s;
+}
+
+.oddish:hover {
+    transform: scale(1.5);
+}
+
+.gastly {
+    width: 10vh;
+    transition: 1s;
+}
+
+.gastly:hover {
+    transform: scale(1.5);
+}
+
+.grimer {
+    width: 10vh;
+    transition: 1s;
+}
+
+.grimer:hover {
+    transform: scale(1.5);
+}
+
+.geoudude {
+    width: 10vh;
+    transition: 1s;
+}
+
+.geoudude:hover {
+    transform: scale(1.5);
+}
+
+.magikarp {
+    width: 10vh;
+    transition: 1s;
+}
+
+.magikarp:hover {
+    transform: scale(1.5);
+}
+
+.machop {
+    width: 10vh;
+    transition: 1s;
+}
+
+.machop:hover {
+    transform: scale(1.5);
+}
+
+.mankey {
+    width: 10vh;
+    transition: 1s;
+}
+
+.mankey:hover {
+    transform: scale(1.5);
+}
+
+.meow {
+    width: 10vh;
+    transition: 1s;
+}
+
+.meow:hover {
+    transform: scale(1.5);
+}
+
+.diggle {
+    width: 10vh;
+    transition: 1s;
+}
+
+.diggle:hover {
+    transform: scale(1.5);
+}
+
+.bellsprout {
+    width: 10vh;
+    transition: 1s;
+}
+
+.bellsprout:hover {
+    transform: scale(1.5);
+}
+
+.cubone {
+    width: 10vh;
+    transition: 1s;
+}
+
+.cubone:hover {
+    transform: scale(1.5);
+}
+
+.hitmonlee {
+    width: 10vh;
+    transition: 1s;
+}
+
+.hitmonlee:hover {
+    transform: scale(1.5);
+}
+
+.hitmonchan {
+    width: 10vh;
+    transition: 1s;
+}
+
+.hitmonchan:hover {
+    transform: scale(1.3);
+}
+
+
+
+/*footer*/
+
+.footer-uno{
+    display: none;
+    grid-area: footer;
+}
+
+/*media queries*/
+
+/*pagina principal*/
+
+@media screen and (max-width: 680px){
+    
+    div main div{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .contenedor-primero .header-uno{
+        display: inline-block;
+        text-align: center;
+    }
+    .contenedor-primero .header-uno nav{
+        background-image: linear-gradient(to bottom,  rgb(37, 36, 36), white);
+    }
+
+    .contenedor-primero .header-uno nav a{
+        background-color: transparent;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .contenedor-primero .header-uno ul{
+        display: flex;
+        justify-items: center;
+        background-image: linear-gradient(to top,  rgb(37, 36, 36), white);
+    }
+
+    .contenedor-primero .header-uno ul li{
+        display: inline-block;
+        background-color: transparent;
+        
+    }
+    .contenedor-primero .header-uno ul li a{
+        color: black;
+        background-color: transparent;
+    }
+    
+}
