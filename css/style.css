@@ -104,6 +104,7 @@ footer h3{
     "section sec-dos"
     "footer footer";
     gap: 1rem;
+    margin-top: 1rem;
     grid-template-columns: 1fr 2fr ;
     grid-template-rows: 0.2fr 0.5fr 0.5fr 0.2fr ;
 
@@ -113,45 +114,39 @@ footer h3{
 
 .header-uno{
     display: flex;
-    height: 3rem;
     grid-area: header;
-    justify-content: space-around;
     gap: 1rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
+
 }
 
-.header-uno nav a{
+.header-uno nav {
     background-color: rgb(61, 61, 61);
     text-decoration: none;
     color: rgb(212, 212, 212);
+    
+
 }
 
-.header-uno nav{
-    background-color: rgb(61, 61, 61);
-    border-radius: 1rem;
-}
-.header-uno ul{
+
+.header-uno nav ul{
     display: flex;
-    gap: 1rem;
+    gap: 80vh;
     background-color: rgb(61, 61, 61);
+
+
 }
 
 .header-uno ul li {
     background-color: rgb(61, 61, 61);
-    padding: 2rem;
+    padding: 1rem;
     list-style: none;
-    text-decoration: none;
-    border-radius: 1rem;
-
-
 }
 
 .header-uno ul li a{
     text-decoration: none;
     background-color: rgb(61, 61, 61);
     color: rgb(212, 212, 212);
-    
-
 }
 
 /*estilos del main*/ 
@@ -551,6 +546,8 @@ footer h3{
 
     .contenedor-primero .header-uno ul{
         display: flex;
+        flex-direction: column;
+        gap: 1rem;
         justify-items: center;
         background-image: linear-gradient(to top,  rgb(37, 36, 36), white);
     }
