@@ -125,13 +125,14 @@ footer h3{
     text-decoration: none;
     color: rgb(212, 212, 212);
     
+    
 
 }
 
 
 .header-uno nav ul{
     display: flex;
-    gap: 80vh;
+    gap: 81vh;
     background-color: rgb(61, 61, 61);
 
 
